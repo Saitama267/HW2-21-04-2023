@@ -18,8 +18,8 @@ namespace HW2
                 Console.WriteLine("--------------------");
                 Console.WriteLine("1- Find max and sum of digits in string");
                 Console.WriteLine("2- Find max and position of digit in string");
-                Console.WriteLine("3-");
-                Console.WriteLine("4-");
+                Console.WriteLine("3- Find max in array of int.");
+                Console.WriteLine("4- Find max in array of int with position.");
                 Console.WriteLine("0-exit");
                 Int32.TryParse(Console.ReadLine(), out menu);
                 if (menu == 0)
@@ -42,11 +42,22 @@ namespace HW2
                 }
                 else if (menu == 3)
                 {
-
+                    Console.Clear();
+                    WorkWithArray array = new WorkWithArray(100);
+                    array.Random(100, 1000);
+                    array.Show();
+                    array.FindMax();
                 }
                 else if (menu == 4)
                 {
-
+                    Console.Clear();
+                    WorkWithArray array = new WorkWithArray(40);
+                    array.Random(240, 480);
+                    array.Show();
+                    Console.WriteLine("a)");
+                    array.FindMaxFirstIndex();
+                    Console.WriteLine("b)");
+                    array.FindMaxLastIndex();
                 }
             }
 

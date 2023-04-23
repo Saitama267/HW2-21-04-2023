@@ -12,7 +12,7 @@ namespace HW2.Classes
 
         public StringWithNumbers(string text)
         {
-            this._text = text; 
+            _text = text; 
         }
 
         public override string ToString()
