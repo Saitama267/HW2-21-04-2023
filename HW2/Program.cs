@@ -10,6 +10,39 @@ namespace HW2
     {
         static void Main(string[] args)
         {
+            int menu = 0;
+            while (true)
+            {
+                Console.WriteLine("\tMenu");
+                Console.WriteLine("--------------------");
+                Console.WriteLine("1-");
+                Console.WriteLine("2-");
+                Console.WriteLine("3-");
+                Console.WriteLine("4-");
+                Console.WriteLine("0-exit");
+                Int32.TryParse(Console.ReadLine(), out menu);
+                if (menu == 0)
+                {
+                    break;
+                }
+                else if(menu == 1)
+                {
+
+                }
+                else if (menu == 2)
+                {
+
+                }
+                else if (menu == 3)
+                {
+
+                }
+                else if (menu == 4)
+                {
+
+                }
+            }
+
         }
     }
 }
