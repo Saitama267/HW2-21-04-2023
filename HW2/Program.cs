@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HW2.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +16,8 @@ namespace HW2
             {
                 Console.WriteLine("\tMenu");
                 Console.WriteLine("--------------------");
-                Console.WriteLine("1-");
-                Console.WriteLine("2-");
+                Console.WriteLine("1- Find max and sum of digits in string");
+                Console.WriteLine("2- Find max and position of digit in string");
                 Console.WriteLine("3-");
                 Console.WriteLine("4-");
                 Console.WriteLine("0-exit");
@@ -27,11 +28,17 @@ namespace HW2
                 }
                 else if(menu == 1)
                 {
-
+                    Console.Clear();
+                    Console.WriteLine("Enter text with digits");
+                    StringWithNumbers text = new StringWithNumbers(Console.ReadLine());
+                    text.GetSumAndMaxOfDigits();
                 }
                 else if (menu == 2)
                 {
-
+                    Console.Clear();
+                    Console.WriteLine("Enter text with digits");
+                    StringWithNumbers text = new StringWithNumbers(Console.ReadLine());
+                    text.GetIndexAndMaxNumber();
                 }
                 else if (menu == 3)
                 {

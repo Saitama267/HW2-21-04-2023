@@ -20,7 +20,8 @@ namespace HW2.Classes
             return _text;
         }
 
-        public void GetSumAndMaxOfNumbers()// Method that helps to find Maximal digit and Sum of all digits in string(_text)  
+        // Method for the first task
+        public void GetSumAndMaxOfDigits()// Method that helps to find Maximal digit and Sum of all digits in string(_text)  
         {
             int max = 0;
             int sum = 0;
@@ -29,7 +30,7 @@ namespace HW2.Classes
             {
                 if (char.IsDigit(_text[i]))
                 {
-                    temp = Convert.ToInt32(_text[i]);
+                    temp = (int)Char.GetNumericValue(_text[i]);
                     sum += temp;
                     if (max < temp)
                     {
@@ -38,8 +39,40 @@ namespace HW2.Classes
                 }
             }
             Console.WriteLine($"Max number in string: {max}" +
-                $"\n Sum of numbers in string: {sum}");
+                $"\nSum of numbers in string: {sum}");
      
         }
+        // Method for the second task
+        public void GetIndexAndMaxNumber()// Method that helps to find Maximal digit and Position of this digit in string(_text) whitout spaces 
+        {
+            int index = 0;
+            int max = 0;
+            int position = -1;
+            int temp;
+            for (int i = 0; i < _text.Length; i++)
+            {
+                if (char.IsDigit(_text[i]))
+                {
+                    temp = (int)char.GetNumericValue(_text[i]);
+                    if (max < temp )
+                    {
+                        max = temp;
+                        index = i;
+                       
+                    }
+                }
+            }
+            for (int i = 0; i < _text.Length; i++)
+            {
+                if (!char.IsWhiteSpace(_text[i]))
+                {
+                    position += 1;
+                }
+            }
+
+            Console.WriteLine($"Max number in string: {max}" +
+               $"\nPosition of max in string: {position}");
+        }
+
     }
 }
