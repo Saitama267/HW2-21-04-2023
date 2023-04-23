@@ -34,7 +34,7 @@ namespace HW2.Classes
             Console.WriteLine();
         }
 
-        // Method for the third task
+        // Method for the 3 task
         public void FindMax()
         {
             int max = 0;
@@ -49,7 +49,7 @@ namespace HW2.Classes
             Console.WriteLine($"Maximal number is: {max}");
         }
 
-        // Method for the fourth task part one
+        // Method for the 4 task part 1
         public void FindMaxFirstIndex()
         {
             int max = 0;
@@ -65,7 +65,7 @@ namespace HW2.Classes
             Console.WriteLine($"Maximal number is: {max}");
             Console.WriteLine($"Maximal number index is: {index}");
         }
-        // Method for the fourth task part one
+        // Method for the 4 task part 2
         public void FindMaxLastIndex()
         {
             int max = 0;

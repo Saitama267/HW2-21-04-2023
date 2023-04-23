@@ -20,7 +20,7 @@ namespace HW2.Classes
             return _text;
         }
 
-        // Method for the first task
+        // Method for the 1 task
         public void GetSumAndMaxOfDigits()// Method that helps to find Maximal digit and Sum of all digits in string(_text)  
         {
             int max = 0;
@@ -42,7 +42,7 @@ namespace HW2.Classes
                 $"\nSum of numbers in string: {sum}");
      
         }
-        // Method for the second task
+        // Method for the 2 task
         public void GetIndexAndMaxNumber()// Method that helps to find Maximal digit and Position of this digit in string(_text) whitout spaces 
         {
             int index = 0;
