@@ -20,7 +20,7 @@ namespace HW2
                 Console.WriteLine("2- Find max and position of digit in string");
                 Console.WriteLine("3- Find max in array of int.");
                 Console.WriteLine("4- Find max in array of int with position.");
-                Console.WriteLine("0-exit");
+                Console.WriteLine("0-exit!");
                 Int32.TryParse(Console.ReadLine(), out menu);
                 if (menu == 0)
                 {
